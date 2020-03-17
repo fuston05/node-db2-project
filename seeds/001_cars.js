@@ -1,0 +1,60 @@
+
+exports.seed = function (knex) {
+  // Deletes ALL existing entries
+  return knex('cars').truncate()
+    .then(function () {
+      // Inserts seed entries
+      return knex('cars').insert([
+        { "Year": 2001, "Make": "Isuzu", "Model": "VehiCROSS", "VIN": "WAUPEAFM8CA976975", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1999, "Make": "GMC", "Model": "Savana 1500", "VIN": "WAUHFBFL9AN844120", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1997, "Make": "Chrysler", "Model": "LHS", "VIN": "5GADX33L86D249153", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1988, "Make": "Ford", "Model": "Escort", "VIN": "1GYFK56299R846334", "Mileage": 78646,  "Transmission_Type": "Automatic","Title_Status": 'clean' },
+        { "Year": 1987, "Make": "Mitsubishi", "Model": "Pajero", "VIN": "5XYKT3A1XCG209429", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2003, "Make": "Volkswagen", "Model": "GTI", "VIN": "WA1BY74L78D164634", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2001, "Make": "BMW", "Model": "5 Series", "VIN": "SALME1D44AA682178", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1992, "Make": "GMC", "Model": "Vandura 1500", "VIN": "WAUBF98E98A494714", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1986, "Make": "Mercury", "Model": "Cougar", "VIN": "WBAWC73559E018024", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2011, "Make": "Nissan", "Model": "Versa", "VIN": "2C3CCAHGXCH446317", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1992, "Make": "Mazda", "Model": "MX-6", "VIN": "1G6DM577490668941", "Mileage": 78646,  "Transmission_Type": "Automatic","Title_Status": 'clean' },
+        { "Year": 2001, "Make": "Toyota", "Model": "Camry", "VIN": "WAUDH94F48N155966", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2009, "Make": "Cadillac", "Model": "Escalade ESV", "VIN": "5TFAW5F17EX883481", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1993, "Make": "Isuzu", "Model": "Stylus", "VIN": "1G4GA5GC4AF841208", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1996, "Make": "Isuzu", "Model": "Hombre", "VIN": "WVWAN7ANXEE224332", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1968, "Make": "Ford", "Model": "Mustang", "VIN": "WBADN53451G910358", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2000, "Make": "Toyota", "Model": "Tundra", "VIN": "3N1CN7AP7EK843585", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1991, "Make": "Lincoln", "Model": "Town Car", "VIN": "JA32X8HW7DU631031", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2010, "Make": "Honda", "Model": "Fit", "VIN": "1N6AA0ECXFN773801", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1993, "Make": "Chevrolet", "Model": "Camaro", "VIN": "WBA3B3G56DN309178", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2009, "Make": "Aston Martin", "Model": "DB9", "VIN": "WA1LFBFP5EA862895", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1999, "Make": "Ford", "Model": "Econoline E350", "VIN": "1G6YX36D385729069", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1995, "Make": "Mercury", "Model": "Sable", "VIN": "1G4HD572X8U181555", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1992, "Make": "Subaru", "Model": "Alcyone SVX", "VIN": "3D4PG3FG7BT405295", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1997, "Make": "Infiniti", "Model": "I", "VIN": "WAUWGAFC8FN506424", "Mileage": 78646,  "Transmission_Type": "Automatic","Title_Status": 'clean' },
+        { "Year": 1999, "Make": "Volkswagen", "Model": "Passat", "VIN": "3GYFNEE37CS854406", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2008, "Make": "Bentley", "Model": "Azure", "VIN": "WBA6B4C5XFD367117", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2007, "Make": "Ford", "Model": "Explorer", "VIN": "SCBBP9ZA4CC471868", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1996, "Make": "Audi", "Model": "riolet", "VIN": "3C3CFFCR8FT184709", "Mileage": 78646,  "Transmission_Type": "Automatic","Title_Status": 'clean' },
+        { "Year": 1969, "Make": "Pontiac", "Model": "Grand Prix", "VIN": "WAUBFAFL0AA140556", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1993, "Make": "Chrysler", "Model": "Town & Country", "VIN": "2HKRM3H33EH514415", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1991, "Make": "Eagle", "Model": "Talon", "VIN": "3FA6P0LU3FR998230", "Mileage": 78646,  "Transmission_Type": "Automatic","Title_Status": 'clean' },
+        { "Year": 2003, "Make": "Lotus", "Model": "Esprit", "VIN": "JH4CL969X6C672619", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1975, "Make": "Chevrolet", "Model": "Corvette", "VIN": "WAUDGBFLXDA175184", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2012, "Make": "Subaru", "Model": "Tribeca", "VIN": "2HNYD18421H981699", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1999, "Make": "Volkswagen", "Model": "rio", "VIN": "JTDKN3DP6F3339887", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2008, "Make": "GMC", "Model": "Savana 2500", "VIN": "KMHGH4JH6FU092747", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1993, "Make": "Mazda", "Model": "Miata MX-5", "VIN": "WVWEU9ANXAE049249", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2001, "Make": "Jaguar", "Model": "XK Series", "VIN": "WA1LMBFE6AD338796", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2010, "Make": "Mazda", "Model": "Miata MX-5", "VIN": "5N1AA0NC1DN604830", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2011, "Make": "Audi", "Model": "TT", "VIN": "WAUAF48H27K158291", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": "clean"},
+        { "Year": 2012, "Make": "Buick", "Model": "Regal", "VIN": "WA1EY94L18D830511", "Mileage": 78646,  "Transmission_Type": "Automatic","Title_Status": 'clean' },
+        { "Year": 1985, "Make": "Lincoln", "Model": "Continental", "VIN": "WP0CB2A86FK228802", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1998, "Make": "Mercury", "Model": "Mountaineer", "VIN": "WAUMFAFL5CA487425", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 1992, "Make": "Porsche", "Model": "911", "VIN": "1G6DV8EP4C0834836", "Mileage": 78646,  "Transmission_Type": "Automatic","Title_Status": 'clean' },
+        { "Year": 2000, "Make": "Cadillac", "Model": "Escalade", "VIN": "1FTWW3B56AE077623", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2005, "Make": "Hyundai", "Model": "Santa Fe", "VIN": "WAUAFAFLXAA589285", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2010, "Make": "Porsche", "Model": "Cayman", "VIN": "WAUKF78E25A206290", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2011, "Make": "Mercedes-Benz", "Model": "Sprinter 2500", "VIN": "1GYFK63878R024080", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' },
+        { "Year": 2010, "Make": "Ford", "Model": "Expedition", "VIN": "WAUET48H36K710390", "Mileage": 78646, "Transmission_Type": "Automatic", "Title_Status": 'clean' }
+      ]);
+    });
+};
