@@ -29,6 +29,8 @@ exports.up = function(knex) {
       .unique()
     
     tbl.integer('Mileage');
+
+    tbl.string('Transmission_Type')
     
     tbl.string('Title_Status', 255);
 

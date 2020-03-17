@@ -6,6 +6,7 @@ const server= express();
 
 //define the router
 const carsRouter= require('../data/carsRouter');
+const salesRouter= require('../data/salesRouter');
 
 // middleware
 server.use(cors());
@@ -14,6 +15,7 @@ server.use(express.json());
 
 //assign the router
 server.use('/api/cars', carsRouter);
+server.use('/api/sales', salesRouter);
 
 server.get('/', (req, res) => {
   res.status(200).json('<h1>Welcome to my humble server!</h1>');
