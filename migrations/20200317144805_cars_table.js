@@ -2,11 +2,11 @@
 /**
  * cars:
  * id, primary key, increments, int
- * Year, text, notNullable
- * Make, text, notNullable indexed
- * Model, text, notNullabel
- * VIN, int, notNullable unique
- * Mileage, int, not null
+ * Year, string, notNullable
+ * Make, string, notNullable indexed
+ * Model, string, notNullabel
+ * VIN, string, unique
+ * Mileage, int null
  * TitleStatus, text, null, 
  *  
  */
