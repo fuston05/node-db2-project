@@ -13,7 +13,7 @@
 
 exports.up = function(knex) {
   return knex.schema.createTable('cars', tbl => {
-    tbl.increments();
+    tbl.increments('ID');
 
     tbl.string('Year', 255)
       .notNullable();
